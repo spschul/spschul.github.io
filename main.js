@@ -91,7 +91,7 @@ var places = [
 
 var thingsToDo = [ //0 = that's all, 1 = then have a noun (person-esque), 2 = 2 personesques
     ["play ping-pong against", 1],
-    ["build a snowman with", 2]
+    ["build a snowman with", 2],
     ["bake cookies", 0],
     ["have a LAN party", 0],
     ["binge-watch Lord of the Rings", 0],
