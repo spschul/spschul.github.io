@@ -86,7 +86,22 @@ var places = [
     ["a silent auction", 1],
     ["the ISS", 0],
     ["the surface of the sun", 2],
-    ["a field of beautiful flowers", 0]
+    ["a field of beautiful flowers", 0],
+    ["the bottom of the ocean", 1],
+    ["Zap Zone", 1],
+    ["a waterpark", 1],
+    ["Disneyland", 1],
+    ["the Death Star", 0],
+    ["a heavily-guarded safe-deposit vault", 0],
+    ["the Pentagon", 0],
+    ["an ancient pyramid", 0],
+    ["the nearest fast-food restaurant", 1],
+    ["a nuclear power plant", 0],
+    ["a rock concert", 1],
+    ["the airport", 1],
+    ["the lost city of Atlantis", 0],
+    ["Google HQ", 1],
+    ["my parents' basement", 0]
 ];
 
 var thingsToDo = [ //0 = that's all, 1 = then have a noun (person-esque), 2 = 2 personesques
