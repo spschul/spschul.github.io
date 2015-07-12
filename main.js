@@ -1,4 +1,4 @@
-/* 
+﻿/* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -33,8 +33,9 @@ var personesques = [ //0 = nothing, 1 = requires "my", 2 = recurses
     ["sentient motorcycle", 1],
     ["Roomba", 1],
     ["alter ego", 1],
-    ["wife", 1],
-    ["husband", 1],
+    ["Nicolas Cage", 0],
+    ["Socrates", 0],
+    ["Ronald McDonald", 0],
     ["favorite actress", 1],
     ["home dawg", 1],
     ["lawyer", 1],
@@ -47,7 +48,17 @@ var personesques = [ //0 = nothing, 1 = requires "my", 2 = recurses
     ["boss", 1],
     ["coworker's long-lost twin", 1],
     ["the only person who I truly believe cares about me", 2],
-    ["my archnemesis", 2]
+    ["my archnemesis", 2],
+    ["my inspiration in life", 2],
+    ["Ash Ketchum, Pokémon Master", 0],
+    ["Jay Gatsby", 0],
+    ["Mario", 0],
+    ["Shakespeare", 0],
+    ["Beowulf", 0],
+    ["Napoleon", 0],
+    ["Harry Potter", 0],
+    //will want to add a plural option later
+    ["the Knights of the Round Table", 0]
         ];
         
 var outsides = [ //0 = period, 1 = ?
@@ -55,6 +66,7 @@ var outsides = [ //0 = period, 1 = ?
     ["Wouldn't it be fun to", 1],
     ["Why don't we", 1],
     ["We should", 0],
+    ["Let's", 0],
     ["Would you guys care to", 1]
 ];
 
@@ -79,13 +91,16 @@ var places = [
 
 var thingsToDo = [ //0 = that's all, 1 = then have a noun (person-esque), 2 = 2 personesques
     ["play ping-pong against", 1],
+    ["build a snowman with", 2]
     ["bake cookies", 0],
     ["have a LAN party", 0],
     ["binge-watch Lord of the Rings", 0],
     ["have a duel of epic proportions with", 1],
     ["trade Pokémon with", 1],
+    ["rickroll", 1],
+    ["play Super Smash Bros with", 2],
     ["yell at", 1],
-    ["frolic with", 1],
+    ["have a deep philosophical discussion with", 1],
     ["ignore Alex's advice", 0],
     ["wrestle with", 1],
     ["play polo with", 1],
@@ -237,5 +252,5 @@ function generateExcuse()
         "go to a wedding for"
     ];
     
-    return randomFromList(beginnings) + ', but I have to ' + randomFromList(verbs) + ' my ' + randomFromList(personesques)[0] + '.';
+    return randomFromList(beginnings) + ', but I have to ' + randomFromList(verbs) + ' ' + generatePersonesques(1) + '.';
 }
